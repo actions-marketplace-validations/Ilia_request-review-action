@@ -18,7 +18,7 @@ const message: Object = {
                     block_id: "commit_title",
                     text: {
                         type: "mrkdwn",
-                        text: authorName + " has requested a review of " + repo + ": " + "<" + prUrl + "|" + prTitle + "> (# " + prNum + ")"
+                        text: authorName + " has requested a review of " + repo + ": " + "<" + prUrl + "|" + prTitle + "> (#" + prNum + ")"
 
                     }
                 }

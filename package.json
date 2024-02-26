@@ -1,6 +1,6 @@
 {
   "name": "request-review-action",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use github actions to request a PR review via Slack notification.",
   "main": "index.js",
   "dependencies": {

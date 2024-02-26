@@ -26,6 +26,6 @@ jobs:
       uses: ilia/request-review-action@v0.0.1
 ```
 
-Message in the channel will be based on:
+Message in the channel will be based on the following template:
 
-PULL_REQUEST_AUTHOR_NAME requested a review of REPO_NAME:<a href="PULL_REQUEST_URL"> PULL_REQUEST_TITLE </a> (#PULL_REQUEST_NUMBER)
+> PULL_REQUEST_AUTHOR_NAME has requested a review of REPO_NAME:<a href="PULL_REQUEST_URL">PULL_REQUEST_TITLE</a> (#PULL_REQUEST_NUMBER)
