@@ -1,0 +1,9 @@
+name: "Request Review with Slack"
+author: "ilia"
+description: "Use github actions to request a PR review via Slack notification"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-pull-request"
+  color: "orange"

@@ -1,0 +1,23 @@
+{
+  "name": "request-review-action",
+  "version": "0.0.1",
+  "description": "Use github actions to request a PR review via Slack notification.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilia/request-review-action.git"
+  },
+  "author": "Ilia Mogilevsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilia/request-review-action/issues"
+  },
+  "homepage": "https://github.com/ilia/request-review-action#readme"
+}
