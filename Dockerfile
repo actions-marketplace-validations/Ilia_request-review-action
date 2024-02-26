@@ -1,7 +1,7 @@
 FROM mhart/alpine-node:12
 
 ADD package*.json /
-RUN npm ci --production
+RUN npm install
 ADD request-review.js /
 RUN chmod +x /request-review.js
 
