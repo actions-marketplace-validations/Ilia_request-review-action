@@ -8,6 +8,12 @@ const prBody: string = process.env.PULL_REQUEST_BODY || "No description provided
 const authorName: string = process.env.PULL_REQUEST_AUTHOR_NAME;
 const repo: string = process.env.REPO_NAME;
 
+// Return early if the author is 'pactflow-renovate-bot[bot]'
+if (authorName && authorName.indexOf("pactflow-renovate-bot")) {
+    console.log("Skipping Slack notification for Renovate bot PR.");
+    process.exit(0);
+}
+
 const message: Object = {
     attachments: [
         {
@@ -26,4 +32,7 @@ const message: Object = {
         }
     ]
 }
-axios.post(url, message);
+axios.post(url, message)
+    .catch(error => {
+        console.error("Error sending Slack notification:", error);
+    });
