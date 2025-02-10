@@ -8,9 +8,8 @@ var prUrl = process.env.PULL_REQUEST_URL;
 var prBody = process.env.PULL_REQUEST_BODY || "No description provided.";
 var authorName = process.env.PULL_REQUEST_AUTHOR_NAME;
 var repo = process.env.REPO_NAME;
-
 // Return early if the author is 'pactflow-renovate-bot[bot]'
-if (authorName && authorName.indexOf("pactflow-renovate-bot")) {
+if (authorName && authorName.indexOf("pactflow-renovate-bot") >= 0) {
     console.log("Skipping Slack notification for Renovate bot PR.");
     process.exit(0);
 }
