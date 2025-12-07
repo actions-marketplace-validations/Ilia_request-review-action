@@ -23,7 +23,7 @@ jobs:
         PULL_REQUEST_AUTHOR_NAME : ${{ github.event.pull_request.user.login }}
         PULL_REQUEST_URL : ${{ github.event.pull_request.html_url }}
         REPO_NAME : ${{ github.event.repository.name }}
-      uses: ilia/request-review-action@v0.0.1
+      uses: ilia/request-review-action@v0.0.2
 ```
 
 Message in the channel will be based on the following template:
